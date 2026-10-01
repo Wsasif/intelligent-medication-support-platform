@@ -141,3 +141,18 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# ---------------------------------------------
+# Python rules: ignores local libraries and cache
+# ---------------------------------------------
+# Ignore the virtual environment folder
+venv/
+server/venv/
+
+# Ignore Python cached bytecode (temporary speed-up files)
+__pycache__/
+*.py[cod]
+
+# Ignore secret files where we keep passwords and API keys
+.env
+server/.env
